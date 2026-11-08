@@ -6,34 +6,6 @@ Part of the **Agentic AI BootCamp**. Six hands-on Jupyter notebooks that take yo
 
 ---
 
-## Learning path
-
-| # | Notebook | Level | What you learn |
-|---|---|---|---|
-| 01 | [`01_tensors_and_autograd.ipynb`](01_tensors_and_autograd.ipynb) | Beginner | Tensor creation, dtypes and devices, indexing, reshaping, broadcasting, `einsum`, NumPy interop, autograd, custom `autograd.Function`, gradient descent from scratch |
-| 02 | [`02_nn_module_training_pipeline.ipynb`](02_nn_module_training_pipeline.ipynb) | Beginner → Intermediate | `nn.Module`, parameters and buffers, containers, initialisation, `Dataset`/`DataLoader`, collate functions, losses, optimisers, LR schedulers, full training loop, early stopping, checkpointing, debugging checklist |
-| 03 | [`03_cnn_rnn_and_sequence_models.ipynb`](03_cnn_rnn_and_sequence_models.ipynb) | Intermediate | Convolutions, residual blocks, batch norm, text pipeline (tokenise → vocab → embed → pad), RNN/LSTM/GRU, packed sequences, 1D-CNN, masked mean pooling, why attention replaced RNNs |
-| 04 | [`04_attention_and_transformers_from_scratch.ipynb`](04_attention_and_transformers_from_scratch.ipynb) | Intermediate → Advanced | Scaled dot-product and multi-head attention, sinusoidal and RoPE positions, Pre-LN Transformer block, a mini-GPT, training recipe, decoding (greedy, temperature, top-k, top-p), KV-cache, parameter scaling |
-| 05 | [`05_finetuning_peft_and_efficient_training.ipynb`](05_finetuning_peft_and_efficient_training.ipynb) | Advanced | Transfer learning, discriminative learning rates, hooks, **LoRA from scratch**, mixed precision, gradient accumulation, gradient checkpointing, `torch.compile`, quantisation, profiling, DDP/FSDP concepts, Hugging Face / PEFT / QLoRA bridge |
-| 06 | [`06_genai_and_agentic_ai_with_pytorch.ipynb`](06_genai_and_agentic_ai_with_pytorch.ipynb) | Advanced / Capstone | Contrastive embeddings (InfoNCE), vector store, reranker, RAG prompt assembly, neural tool router, agent loop (plan → act → observe → remember), REINFORCE policy gradient, Recall@k / MRR, batching, TorchScript / ONNX export |
-
-Work through them in order; each notebook builds on the previous ones and ends with exercises.
-
-## Concept map
-
-```
-01 Tensors & Autograd
-        │
-02 nn.Module & Training Loop
-        │
-   ┌────┴─────┐
-03 CNN/RNN    04 Attention & Transformers (mini-GPT)
-   └────┬─────┘
-        │
-05 Fine-tuning · LoRA · Efficient training
-        │
-06 GenAI & Agentic AI: embeddings → RAG → router → agent loop
-```
 
 ## Getting started
 
